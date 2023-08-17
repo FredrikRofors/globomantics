@@ -1,5 +1,5 @@
 import Link from "next/link"
-import style from './styles.css'
+import style from './styles.module.css'
 
 export const metadata = {
   title: 'Next.js',
@@ -13,7 +13,7 @@ export default function ConferenceLayout({
 }) {
   return (
     <>
-      <header style={style.header}>
+      <header className={style.header}>
         <h1>GLOBOMATICS MANIACALLY TAKING TECH TO THE GLOBE</h1>
       </header>
       <div style={{ backgroundColor: 'lightgray', paddingTop: 20, paddingBottom: 20, paddingLeft: 20, paddingRight: 20, fontSize: '1.5em' }}>
