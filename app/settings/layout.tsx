@@ -14,8 +14,8 @@ export default function ConferenceLayout({
   return (
     <>
       <nav className={style.subnavigation}>
-        <Link href="/conference/speakers" style={{ color: 'white', marginRight: 20 }}>Speakers</Link> |
-        <Link href="/conference/sessions" style={{ color: 'white', marginLeft: 20 }}>Sessions</Link>
+        <Link href="/settings/profile" style={{ color: 'white', marginRight: 20 }}>Profile</Link> |
+        <Link href="/settings/password" style={{ color: 'white', marginLeft: 20 }}>Password</Link>
       </nav>
       {children}
     </>
