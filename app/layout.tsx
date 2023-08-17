@@ -1,6 +1,7 @@
 import { Quicksand } from "@next/font/google";
 import Link from "next/link";
 import style from './styles.module.css'
+import './global.css'
 
 // https://fonts.google.com/
 const googleFont = Quicksand({
@@ -28,7 +29,7 @@ export default function RootLayout({
           <Link href="/blog" style={{ color: 'white', marginRight: 20, marginLeft: 20 }}>Blog</Link> |
           <Link href="/settings" style={{ color: 'white', marginLeft: 20 }}>Settings</Link>
         </nav>
-        <div>
+        <div className={style.content}>
           {children}
         </div>
         <footer className={style.footer}>

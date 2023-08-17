@@ -35,9 +35,13 @@
     width: 100%;
 }
 
+.content {
+    margin: 5px 5px 20px 5px;
+}
+
 .footer {
     margin-top: auto;
-    background-color: aliceblue;
+    background-color: lightgrey;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
