@@ -20,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={googleFont.className}>
+      <head>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+      </head>
       <body className={style.body}>
         <header className={style.header}>
           <h1>GLOBOMATICS :: TAKING TECH TO THE GLOBE</h1>
