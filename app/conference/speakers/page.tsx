@@ -3,7 +3,15 @@ import style from './speakers.module.css';
 // Statid site generation by default
 async function fetchSpeakers() {
     const response = await fetch(
-        "https://raw.githubusercontent.com/adhithiravi/consuming-graphql-apollo/master/api/data/speakers.json"
+        "https://raw.githubusercontent.com/adhithiravi/consuming-graphql-apollo/master/api/data/speakers.json",
+
+        // Server-side rendering, cached for 20s
+        // 
+        // {
+        //     next: {
+        //         revalidate: 20
+        //     }
+        // }
     )
 
     const data = await response.json();
@@ -18,7 +26,6 @@ interface ISpeaker {
 
 export default async function Speakers() {
     const data = await fetchSpeakers();
-
     const renderingTime = new Date();
 
     return (
