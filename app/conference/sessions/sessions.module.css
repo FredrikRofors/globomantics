@@ -4,3 +4,26 @@
     margin-bottom: 20px;
     background-color: beige;
 }
+
+.trackHeader {
+    margin-bottom: 40px;
+}
+
+.track {
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.trackSelected {
+    background-color: aqua;
+    border: 1px solid aqua;
+}
+
+.track:hover {
+    border: 1px solid aqua;
+}
